@@ -16,7 +16,7 @@ int main(void){
     for(int i = 1; i < N; i++){
        tmp = A[i];
        int j = i - 1;
-       for(;j >= 0 && A[j] > tmp; j--){
+       for(;j >= 0 && A[j] > tmp; j--){ // j>=0を先に書かないと負の要素にアクセスする可能性がある
             A[j+1] = A[j];
        }
        A[j+1] = tmp;
