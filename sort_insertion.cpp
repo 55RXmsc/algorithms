@@ -12,7 +12,7 @@ int main(void){
     int A[MAX], N, tmp;
     cin >> N;
     for(int i = 0; i < N; i++) cin >> A[i];
-
+    printarray(A, N);
     for(int i = 1; i < N; i++){
        tmp = A[i];
        int j = i - 1;
@@ -22,6 +22,5 @@ int main(void){
        A[j+1] = tmp;
        printarray(A, N);
     }
-    printarray(A, N);
     return 0;
 }
