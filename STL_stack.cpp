@@ -24,7 +24,7 @@ int main(void){
             S.push(a * b);
         }
         else{
-            S.push(atoi(s.c_str()));
+            S.push(stoi(s));
         }
     }
     cout << S.top() << endl;
